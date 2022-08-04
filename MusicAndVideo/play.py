@@ -102,7 +102,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["play"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["تشغيل", f"شغل", "ش"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -125,7 +125,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/2f7187bd1edbe9b4c9a9e.jpg",
+                    photo="https://telegra.ph/file/1f7e0077838be5ef1efde.jpg",
                     caption=f"""
 تم بدء تشغيل الاغنية ▶Ke {pos}
 🎧 الاسم: [{songname}]({link})
@@ -144,7 +144,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/c969b241c5103576cfb3f.jpg",
+                    photo="https://telegra.ph/file/1f7e0077838be5ef1efde.jpg",
                     caption=f"""
 تم بدء تشغيل الاغنية ،💗🎧
 🎧 الاسم: [{songname}]({link})
@@ -238,7 +238,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/fe447eb2833c4ec552836.jpg",
+                    photo="https://telegra.ph/file/ccf3ad537f6e40e33f6ab.mp4",
                     caption=f"""
 **#⃣ تم بدء تشغيل الفيديو بنجاح {pos}
 🎧 الاسم: [{songname}]({link})
